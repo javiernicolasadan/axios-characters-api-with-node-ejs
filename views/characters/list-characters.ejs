@@ -3,5 +3,6 @@
 <ul>
   <% characters.forEach(character => { %>
   <li><a href="/characters/<%- character.id %>"> <%= character.name %> </a></li>
+  <li style="list-style: none"><a href="/characters/<%- character.id %>/edit"> Edit Character </a></li>
   <% }) %>
 </ul>
